@@ -1,6 +1,19 @@
 // font
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap');
 
+@mixin centerFlex {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+@mixin cardSize {
+    width: 311px;
+    height: 222px;
+}
+
 @mixin cardTitle {
 
     font-family: Poppins;
@@ -41,6 +54,12 @@
 *{
 
     font-family: 'Poppins', sans-serif;
+}
+
+.body{
+
+    background: #F2F2F2;
+
 }
 
 .container{
@@ -95,5 +114,30 @@
                     mix-blend-mode: normal;
                     opacity: 0.5;
                 }
+        }
+
+        .cards{
+
+            @include centerFlex();
+
+            .cards__supervisor{
+
+                @include cardSize();
+                @include shadow();
+                
+
+                    .cards__supervisor--upBorder{
+
+                        @include upBorder();
+                        background-color: #44D3D2;
+                        width: 311px;
+                        height: 3.55px;
+                        
+
+                    }
+                    
+                
+            }
+
         }
 }
