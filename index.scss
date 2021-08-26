@@ -1,0 +1,99 @@
+// font
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap');
+
+@mixin cardTitle {
+
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 30px;
+    color: #4D4F62;
+}
+
+@mixin cardText {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 23px;
+    letter-spacing: 0.0902778px;
+    color: #4D4F62;
+}
+
+@mixin cardImg {
+    width: 57px;
+    height: 57px;   
+}
+
+@mixin shadow {
+    background: #FFFFFF;
+    box-shadow: 0px 15px 30px -11px rgba(131, 166, 210, 0.5);
+    border-radius: 8px;
+}
+
+@mixin upBorder {
+
+    box-shadow: 0px 15px 30px -11px rgba(131, 166, 210, 0.5);
+    
+}
+
+*{
+
+    font-family: 'Poppins', sans-serif;
+}
+
+.container{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem;
+
+        .textDescription{
+
+            width: 311px;
+            height: 161px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            
+                .textDescription__1{
+
+                    font-family: Poppins;
+                    font-style: normal;
+                    font-weight: 200;
+                    font-size: 24px;
+                    line-height: 36px;
+                    letter-spacing: 0.166667px;
+                    color: #4D4F62;
+
+                }
+
+                .textDescription__2{
+
+                    font-style: normal;
+                    font-weight: 600;
+                    font-size: 24px;
+                    line-height: 36px;
+                    text-align: center;
+                    letter-spacing: 0.166667px;
+                    color: #4D4F62;
+                }
+                
+                .textDescription__3{
+
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 15px;
+                    line-height: 25px;
+                    text-align: center;
+                    letter-spacing: 0.104167px;
+                    color: #4D4F62;
+                    mix-blend-mode: normal;
+                    opacity: 0.5;
+                }
+        }
+}
