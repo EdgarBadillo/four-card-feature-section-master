@@ -22,6 +22,7 @@
       -ms-flex-align: center;
           align-items: center;
   margin: 1rem;
+  padding-top: 5rem;
 }
 
 .container .textDescription {
@@ -40,6 +41,7 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  padding-bottom: 4rem;
 }
 
 .container .textDescription .textDescription__1 {
@@ -88,11 +90,13 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  gap: 1rem;
 }
 
 .container .cards .cards__supervisor {
   width: 311px;
   height: 222px;
+  position: relative;
   background: #FFFFFF;
   -webkit-box-shadow: 0px 15px 30px -11px rgba(131, 166, 210, 0.5);
           box-shadow: 0px 15px 30px -11px rgba(131, 166, 210, 0.5);
@@ -102,8 +106,236 @@
 .container .cards .cards__supervisor .cards__supervisor--upBorder {
   -webkit-box-shadow: 0px 15px 30px -11px rgba(131, 166, 210, 0.5);
           box-shadow: 0px 15px 30px -11px rgba(131, 166, 210, 0.5);
-  background-color: #44D3D2;
   width: 311px;
   height: 3.55px;
+  background-color: #44D3D2;
+}
+
+.container .cards .cards__supervisor .cards__supervisor--title {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 30px;
+  color: #4D4F62;
+  padding-left: 1.5rem;
+}
+
+.container .cards .cards__supervisor .cards__supervisor--function {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 23px;
+  letter-spacing: 0.0902778px;
+  color: #4D4F62;
+  padding-left: 1.5rem;
+}
+
+.container .cards .cards__supervisor .cards__supervisor--img {
+  width: 57px;
+  height: 57px;
+  position: absolute;
+  left: 14rem;
+  top: 9rem;
+}
+
+.container .cards .cards__builder {
+  width: 311px;
+  height: 222px;
+  position: relative;
+  background: #FFFFFF;
+  -webkit-box-shadow: 0px 15px 30px -11px rgba(131, 166, 210, 0.5);
+          box-shadow: 0px 15px 30px -11px rgba(131, 166, 210, 0.5);
+  border-radius: 8px;
+}
+
+.container .cards .cards__builder .cards__builder--upBorder {
+  -webkit-box-shadow: 0px 15px 30px -11px rgba(131, 166, 210, 0.5);
+          box-shadow: 0px 15px 30px -11px rgba(131, 166, 210, 0.5);
+  width: 311px;
+  height: 3.55px;
+  background-color: #EA5454;
+}
+
+.container .cards .cards__builder .cards__builder--title {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 30px;
+  color: #4D4F62;
+  padding-left: 1.5rem;
+}
+
+.container .cards .cards__builder .cards__builder--function {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 23px;
+  letter-spacing: 0.0902778px;
+  color: #4D4F62;
+  padding-left: 1.5rem;
+}
+
+.container .cards .cards__builder .cards__builder--img {
+  width: 57px;
+  height: 57px;
+  position: absolute;
+  left: 14rem;
+  top: 9rem;
+}
+
+.container .cards .cards__karma {
+  width: 311px;
+  height: 222px;
+  position: relative;
+  background: #FFFFFF;
+  -webkit-box-shadow: 0px 15px 30px -11px rgba(131, 166, 210, 0.5);
+          box-shadow: 0px 15px 30px -11px rgba(131, 166, 210, 0.5);
+  border-radius: 8px;
+}
+
+.container .cards .cards__karma .cards__karma--upBorder {
+  -webkit-box-shadow: 0px 15px 30px -11px rgba(131, 166, 210, 0.5);
+          box-shadow: 0px 15px 30px -11px rgba(131, 166, 210, 0.5);
+  width: 311px;
+  height: 3.55px;
+  background-color: #FCAE4A;
+}
+
+.container .cards .cards__karma .cards__karma--title {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 30px;
+  color: #4D4F62;
+  padding-left: 1.5rem;
+}
+
+.container .cards .cards__karma .cards__karma--function {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 23px;
+  letter-spacing: 0.0902778px;
+  color: #4D4F62;
+  padding-left: 1.5rem;
+}
+
+.container .cards .cards__karma .cards__karma--img {
+  width: 57px;
+  height: 57px;
+  position: absolute;
+  left: 14rem;
+  top: 9rem;
+}
+
+.container .cards .cards__calculator {
+  width: 311px;
+  height: 222px;
+  position: relative;
+  background: #FFFFFF;
+  -webkit-box-shadow: 0px 15px 30px -11px rgba(131, 166, 210, 0.5);
+          box-shadow: 0px 15px 30px -11px rgba(131, 166, 210, 0.5);
+  border-radius: 8px;
+}
+
+.container .cards .cards__calculator .cards__calculator--upBorder {
+  -webkit-box-shadow: 0px 15px 30px -11px rgba(131, 166, 210, 0.5);
+          box-shadow: 0px 15px 30px -11px rgba(131, 166, 210, 0.5);
+  width: 311px;
+  height: 3.55px;
+  background-color: #549EF2;
+}
+
+.container .cards .cards__calculator .cards__calculator--title {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 30px;
+  color: #4D4F62;
+  padding-left: 1.5rem;
+}
+
+.container .cards .cards__calculator .cards__calculator--function {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 23px;
+  letter-spacing: 0.0902778px;
+  color: #4D4F62;
+  padding-left: 1.5rem;
+}
+
+.container .cards .cards__calculator .cards__calculator--img {
+  width: 57px;
+  height: 57px;
+  position: absolute;
+  left: 14rem;
+  top: 9rem;
+}
+
+@media screen and (min-width: 1060px) {
+  .container .textDescription {
+    width: 540px;
+    height: 168px;
+  }
+  .container .textDescription .textDescription__1, .container .textDescription .textDescription__2 {
+    font-size: 36px;
+  }
+  .container .cards {
+    width: 1110px;
+    height: 530px;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+    -ms-grid-rows: (1fr)[2];
+        grid-template-rows: repeat(2, 1fr);
+    position: relative;
+  }
+  .container .cards .cards__supervisor {
+    position: absolute;
+    width: 350px;
+    height: 250px;
+  }
+  .container .cards .cards__supervisor .cards__supervisor--upBorder {
+    width: 350px;
+  }
+  .container .cards .cards__builder {
+    position: absolute;
+    top: 0;
+    left: 24rem;
+    width: 350px;
+    height: 250px;
+  }
+  .container .cards .cards__builder .cards__builder--upBorder {
+    width: 350px;
+  }
+  .container .cards .cards__karma {
+    position: absolute;
+    bottom: 0;
+    left: 24rem;
+    width: 350px;
+    height: 250px;
+  }
+  .container .cards .cards__karma .cards__karma--upBorder {
+    width: 350px;
+  }
+  .container .cards .cards__calculator {
+    position: absolute;
+    right: 0;
+    width: 350px;
+    height: 250px;
+  }
+  .container .cards .cards__calculator .cards__calculator--upBorder {
+    width: 350px;
+  }
 }
 /*# sourceMappingURL=index.css.map */
