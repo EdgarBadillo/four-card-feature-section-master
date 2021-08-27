@@ -12,6 +12,7 @@
 @mixin cardSize {
     width: 311px;
     height: 222px;
+    position: relative;
 }
 
 @mixin cardTitle {
@@ -22,6 +23,7 @@
     font-size: 20px;
     line-height: 30px;
     color: #4D4F62;
+    padding-left: 1.5rem;
 }
 
 @mixin cardText {
@@ -32,11 +34,15 @@
     line-height: 23px;
     letter-spacing: 0.0902778px;
     color: #4D4F62;
+    padding-left: 1.5rem;
 }
 
 @mixin cardImg {
     width: 57px;
-    height: 57px;   
+    height: 57px;
+    position: absolute;
+    left: 14rem;
+    top: 9rem;   
 }
 
 @mixin shadow {
@@ -48,6 +54,8 @@
 @mixin upBorder {
 
     box-shadow: 0px 15px 30px -11px rgba(131, 166, 210, 0.5);
+    width: 311px;
+    height: 3.55px;
     
 }
 
@@ -69,6 +77,7 @@
     justify-content: center;
     align-items: center;
     margin: 1rem;
+    padding-top: 5rem;
 
         .textDescription{
 
@@ -78,6 +87,7 @@
             flex-direction: column;
             justify-content: center;
             align-items: center;
+            padding-bottom: 4rem;
             
                 .textDescription__1{
 
@@ -119,25 +129,242 @@
         .cards{
 
             @include centerFlex();
+            gap: 1rem;
 
             .cards__supervisor{
 
                 @include cardSize();
                 @include shadow();
                 
+                
 
                     .cards__supervisor--upBorder{
 
                         @include upBorder();
                         background-color: #44D3D2;
-                        width: 311px;
-                        height: 3.55px;
+                        
                         
 
+                    }
+
+                    .cards__supervisor--title{
+
+                        @include cardTitle();
+
+                    }
+
+                    .cards__supervisor--function{
+
+                        @include cardText();
+
+                    }
+
+                    .cards__supervisor--img{
+
+                        @include cardImg();
+                    
                     }
                     
                 
             }
 
+            
+             .cards__builder{
+
+                @include cardSize();
+                @include shadow();
+                
+                
+
+                    .cards__builder--upBorder{
+
+                        @include upBorder();
+                        background-color: #EA5454;
+                        
+                        
+
+                    }
+
+                    .cards__builder--title{
+
+                        @include cardTitle();
+
+                    }
+
+                    .cards__builder--function{
+
+                        @include cardText();
+
+                    }
+
+                    .cards__builder--img{
+
+                        @include cardImg();
+                    
+                    }
+                    
+                
+            }
+
+            .cards__karma{
+
+                @include cardSize();
+                @include shadow();
+                
+                
+
+                    .cards__karma--upBorder{
+
+                        @include upBorder();
+                        background-color: #FCAE4A;
+                        
+                        
+
+                    }
+
+                    .cards__karma--title{
+
+                        @include cardTitle();
+
+                    }
+
+                    .cards__karma--function{
+
+                        @include cardText();
+
+                    }
+
+                    .cards__karma--img{
+
+                        @include cardImg();
+                    
+                    }
+                    
+                
+            }
+
+            .cards__calculator{
+
+                @include cardSize();
+                @include shadow();
+                
+                
+
+                    .cards__calculator--upBorder{
+
+                        @include upBorder();
+                        background-color: #549EF2;
+                        
+                    }
+
+                    .cards__calculator--title{
+
+                        @include cardTitle();
+
+                    }
+
+                    .cards__calculator--function{
+
+                        @include cardText();
+
+                    }
+
+                    .cards__calculator--img{
+
+                        @include cardImg();
+                    
+                    }
+                    
+                
+            }
         }
 }
+
+@media screen and (min-width: 1060px){
+
+    @mixin carddesk {
+        width: 350px;
+        height: 250px;
+    }
+     
+    
+
+    .container{
+
+        .textDescription{
+
+            width: 540px;
+            height: 168px;
+
+            .textDescription__1, .textDescription__2 {
+
+                font-size: 36px;
+            }
+        }
+
+        .cards{
+
+            width: 1110px;
+            height: 530px;
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+            grid-template-rows: repeat(2,1fr); 
+            position: relative;
+            
+
+            .cards__supervisor{
+
+                position: absolute;
+                @include carddesk();
+
+                .cards__supervisor--upBorder{
+
+                    width: 350px;
+                }
+            }
+
+            .cards__builder{
+
+                position: absolute;
+                top: 0;
+                left: 24rem;
+                @include carddesk();
+
+                .cards__builder--upBorder{
+
+                    width: 350px;
+                }
+            }
+
+            .cards__karma{
+
+                position: absolute;
+                bottom: 0;
+                left: 24rem;
+                @include carddesk();
+
+                .cards__karma--upBorder{
+
+                    width: 350px;
+                }
+            }
+
+            .cards__calculator{
+
+                position: absolute;
+                right: 0;
+                @include carddesk();
+
+                .cards__calculator--upBorder{
+
+                    width: 350px;
+                }
+            }
+
+            
+        }
+    }
+
+
+}
+    
